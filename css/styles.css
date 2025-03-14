@@ -393,6 +393,8 @@ button {
 
 .overlay-text {
     color: #f4f4fd;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     background-color: #4d5ae5;
     padding: 40px 32px;
     position: absolute;
@@ -440,7 +442,13 @@ button {
 
 .footer-container {
     display: flex;
-    gap: 120px;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.footer-wrap {
+    width: 264px;
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -461,7 +469,8 @@ button {
 }
 
 .footer-social {
-    width: 208px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-subtitle {
@@ -470,7 +479,11 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.foter .social-linkls {
+    gap: 16px;
 }
 
 .footer-social .team-link:hover {
