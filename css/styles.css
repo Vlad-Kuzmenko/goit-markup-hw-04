@@ -98,7 +98,7 @@ button {
 }
 
 .logo.header-logo{
-    margin-right: 76px; /*first eror*/
+    margin-right: 76px; 
 }
 
 .nav-list {
@@ -322,14 +322,14 @@ button {
     margin-bottom: 8px;
 }
 
-.social-linkls {
+.social-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
 }
 
-.social-linkls-item {
+.social-links-item {
     width: 40px;
     height: 40px;
 }
@@ -347,7 +347,7 @@ button {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-linkls-item:hover .team-link, .social-linkls-item .team-link:focus { 
+.social-links-item:hover .team-link, .social-links-item .team-link:focus { 
     background-color: #404bbf;
 }
 
@@ -482,7 +482,7 @@ button {
     margin-bottom: 16px;
 }
 
-.footer .social-linkls {
+.footer .social-links {
     gap: 16px;
 }
 
