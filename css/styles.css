@@ -482,11 +482,11 @@ button {
     margin-bottom: 16px;
 }
 
-.foter .social-linkls {
+.footer .social-linkls {
     gap: 16px;
 }
 
-.footer-social .team-link:hover {
+.footer-social .team-link:hover, .footer-social .team-link:focus {
     background-color: #31d0aa;
 }
 /* #endregion */
