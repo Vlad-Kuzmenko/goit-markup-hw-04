@@ -297,6 +297,7 @@ button {
     background-color: #fff;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-wrap {
@@ -321,13 +322,13 @@ button {
     margin-bottom: 8px;
 }
 
-.team-wrapper {
+.social-linkls {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.team-link {
+.social-linkls-item {
     display: block;
     width: 40px;
     height: 40px;
