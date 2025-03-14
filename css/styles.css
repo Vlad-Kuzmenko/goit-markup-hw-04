@@ -347,8 +347,7 @@ button {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-linkls-item:hover .team-link,
-.social-linkls-item:focus .team-link {
+.social-linkls-item:hover .team-link, .social-linkls-item .team-link:focus { 
     background-color: #404bbf;
 }
 
@@ -378,6 +377,13 @@ button {
 
 .portfolio-item {
     width: calc((100% - 48px) / 3);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-box-img {
@@ -385,30 +391,23 @@ button {
     overflow: hidden;
 }
 
-.overlay {
+.overlay-text {
+    color: #f4f4fd;
+    background-color: #4d5ae5;
     padding: 40px 32px;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9099;
     width: 100%;
     height: 100%;
-    background-color: #4d5ae5;
     transform: translateY(100%);
+    transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-}
-
-.portfolio-item:hover .overlay {
-        transform: translateY(0);
+.portfolio-item:hover .overlay-text {
+    transform: translateY(0);
 }
 
 .portfolio-wrap {
