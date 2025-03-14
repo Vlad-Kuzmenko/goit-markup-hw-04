@@ -207,7 +207,7 @@ button {
     margin: 0 auto;
     display: block;
     border: none;
-    transition-property: color;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -301,7 +301,7 @@ button {
 }
 
 .team-wrap {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .team-subtitle {
@@ -324,23 +324,31 @@ button {
 
 .social-linkls {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 24px;
 }
 
 .social-linkls-item {
-    display: block;
     width: 40px;
     height: 40px;
+}
+
+.team-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     background-color: #4d5ae5;
     border-radius: 50%;
-    padding: 12px;
-    transition-property: color;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-link:hover {
+.social-linkls-item:hover .team-link,
+.social-linkls-item:focus .team-link {
     background-color: #404bbf;
 }
 
@@ -387,7 +395,6 @@ button {
     height: 100%;
     background-color: #4d5ae5;
     transform: translateY(100%);
-    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
